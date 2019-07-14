@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import Board from './Board.js';
-import { TaskProvider } from './TaskContext';
+import Board from './components/board/Board.js';
+import {BoardProvider} from './BoardContext';
 
 function App() {
   return (
-    <div className='App'>
-      <TaskProvider>
+    <div className="App">
+      <BoardProvider>
         <Board />
-      </TaskProvider>
+      </BoardProvider>
     </div>
   );
 }
